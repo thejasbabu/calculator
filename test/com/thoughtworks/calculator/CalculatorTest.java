@@ -12,4 +12,11 @@ public class CalculatorTest {
 
         assertEquals(0.0, calculator.resultOf(""), 0.0);
     }
+
+    @Test
+    public void shouldReturnFiveWhenAdd5IsPassedInitially() {
+        Calculator calculator = new Calculator();
+
+        assertEquals(5.0, calculator.resultOf("add 5"), 0.0);
+    }
 }
