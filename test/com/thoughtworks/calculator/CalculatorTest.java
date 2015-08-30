@@ -19,4 +19,11 @@ public class CalculatorTest {
 
         assertEquals(5.0, calculator.resultOf("add 5"), 0.0);
     }
+
+    @Test
+    public void shouldReturnMinusFiveWhenSubtract5IsPassedInitially() {
+        Calculator calculator = new Calculator();
+
+        assertEquals(-5.0, calculator.resultOf("subtract 5"), 0.0);
+    }
 }
