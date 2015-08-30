@@ -76,4 +76,11 @@ public class CalculatorTest {
 
         assertEquals(1.0, calculator.resultOf("divide 5"), 0.0);
     }
+
+    @Test
+    public void shouldReturnZeroWhenCancelCommandIsPassed() {
+        Calculator calculator = new Calculator();
+
+        assertEquals(0.0, calculator.resultOf("cancel"), 0.0);
+    }
 }
