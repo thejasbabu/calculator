@@ -19,4 +19,11 @@ public class OperationTest {
 
         assertEquals(0.0, operation.performed(5), 0.0);
     }
+
+    @Test
+    public void multiplicationByFiveOnResultOfFiveShouldProduce25() {
+        Operation operation = new Operation("multiply 5");
+
+        assertEquals(25.0, operation.performed(5), 0.0);
+    }
 }
