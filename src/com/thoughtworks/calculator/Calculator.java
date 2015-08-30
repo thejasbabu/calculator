@@ -2,10 +2,20 @@
 package com.thoughtworks.calculator;
 
 public class Calculator {
+    private double result;
+
+    public Calculator() {
+        result = 0;
+    }
 
     public double resultOf(String command) {
-        if(command.equals("add 5"))
-            return 5;
+        double operand;
+        if(command.contains("add"))
+        {
+            operand = Double.parseDouble(command.split(" ")[1]);
+            result+= operand;
+            return result;
+        }
         else if(command.equals("subtract 5"))
             return -5;
         else
