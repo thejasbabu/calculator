@@ -8,24 +8,24 @@ public class Operation {
         this.command = command;
     }
 
-    public double performed(double result) {
-        double operand;
+    public double performed(double operandOne) {
+        double oprandTwo;
         if (command.contains("add")) {
-            operand = Double.parseDouble(command.split(" ")[1]);
-            result += operand;
-            return result;
+            oprandTwo = Double.parseDouble(command.split(" ")[1]);
+            operandOne += oprandTwo;
+            return operandOne;
         } else if (command.contains("subtract")) {
-            operand = Double.parseDouble(command.split(" ")[1]);
-            result -= operand;
-            return result;
+            oprandTwo = Double.parseDouble(command.split(" ")[1]);
+            operandOne -= oprandTwo;
+            return operandOne;
         } else if (command.contains("multiply")) {
-            operand = Double.parseDouble(command.split(" ")[1]);
-            result *= operand;
-            return result;
+            oprandTwo = Double.parseDouble(command.split(" ")[1]);
+            operandOne *= oprandTwo;
+            return operandOne;
         } else if (command.contains("divide")) {
-            operand = Double.parseDouble(command.split(" ")[1]);
-            result /= operand;
-            return result;
+            oprandTwo = Double.parseDouble(command.split(" ")[1]);
+            operandOne /= oprandTwo;
+            return operandOne;
         }
         return 0;
     }
