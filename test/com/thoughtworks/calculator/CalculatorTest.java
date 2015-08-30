@@ -26,4 +26,11 @@ public class CalculatorTest {
 
         assertEquals(-5.0, calculator.resultOf("subtract 5"), 0.0);
     }
+
+    @Test
+    public void shouldReturnZeroWhenMultiply5IsPassedInitially() {
+        Calculator calculator = new Calculator();
+
+        assertEquals(0.0, calculator.resultOf("multiply 5"), 0.0);
+    }
 }
