@@ -58,4 +58,13 @@ public class CalculatorTest {
 
         assertEquals(0.0, calculator.resultOf("subtract 5"), 0.0);
     }
+
+    @Test
+    public void shouldReturnTheMultiplicationOfPreviousResultByFiveWhenMultiply5IsPassed() {
+        Calculator calculator = new Calculator();
+
+        calculator.resultOf("add 5");
+
+        assertEquals(25.0, calculator.resultOf("multiply 5"), 0.0);
+    }
 }

@@ -21,6 +21,11 @@ public class Calculator {
             result -= operand;
             return result;
         }
+        else if(command.contains("multiply")){
+            operand = Double.parseDouble(command.split(" ")[1]);
+            result *= operand;
+            return result;
+        }
         else
             return 0;
     }
