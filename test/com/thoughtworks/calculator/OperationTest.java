@@ -26,4 +26,11 @@ public class OperationTest {
 
         assertEquals(25.0, operation.performed(5), 0.0);
     }
+
+    @Test
+    public void divisionByFiveOnResultOfFiveShouldProduceOne() {
+        Operation operation = new Operation("divide 5");
+
+        assertEquals(1.0, operation.performed(5), 0.0);
+    }
 }
