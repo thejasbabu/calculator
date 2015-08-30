@@ -10,23 +10,23 @@ public class Calculator {
 
     public double resultOf(String command) {
         double operand;
-        if(command.contains("add"))
-        {
+        if (command.contains("add")) {
             operand = Double.parseDouble(command.split(" ")[1]);
             result += operand;
             return result;
-        }
-        else if(command.contains("subtract")){
+        } else if (command.contains("subtract")) {
             operand = Double.parseDouble(command.split(" ")[1]);
             result -= operand;
             return result;
-        }
-        else if(command.contains("multiply")){
+        } else if (command.contains("multiply")) {
             operand = Double.parseDouble(command.split(" ")[1]);
             result *= operand;
             return result;
+        } else if (command.contains("divide")) {
+            operand = Double.parseDouble(command.split(" ")[1]);
+            result /= operand;
+            return result;
         }
-        else
-            return 0;
+        return 0;
     }
 }

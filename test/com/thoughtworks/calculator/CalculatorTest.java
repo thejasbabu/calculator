@@ -67,4 +67,13 @@ public class CalculatorTest {
 
         assertEquals(25.0, calculator.resultOf("multiply 5"), 0.0);
     }
+
+    @Test
+    public void shouldReturnTheDivisionOfPreviousResultByFiveWhenDivide5IsPassed() {
+        Calculator calculator = new Calculator();
+
+        calculator.resultOf("add 5");
+
+        assertEquals(1.0, calculator.resultOf("divide 5"), 0.0);
+    }
 }
