@@ -1,5 +1,5 @@
 #Problem Definition
-To model out a calculator which accepts add, subtract, multiply, divide, cancel and exit and prints out the output.
+To model a calculator which accepts add, subtract, multiply, divide, cancel and exit and prints out the output.
 
 #Dev Environment Setup
 -JDK Version 1.6 or higher

@@ -10,6 +10,6 @@ public class Calculator {
 
     public double resultOf(Operation operation) {
         result= operation.performed(result);
-        return result;
+        return 0.0;
     }
 }
